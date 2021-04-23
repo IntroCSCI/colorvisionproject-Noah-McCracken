@@ -6,7 +6,7 @@ Provided a number of distinct colors needed (2 or more), create a palette of col
 
 ### v0.2 Updates
 
-*Coming soon*
+Added functions and logical system to eliminate red and green colors
 
 ### v1.0 Updates
 
@@ -36,11 +36,11 @@ Number of colors needed
 File created successfully!
 //Clear Console
 Test01.css containing 5 colors 
-#FFFFFF
-#E69F00
-#F0E442
-#009E73
-#D55E00
+#.....
+#.....
+#.....
+#.....
+#.....
 ```
 
 ## C++ Guide
@@ -50,8 +50,9 @@ Test01.css containing 5 colors
 1. int numColor //User input of desired number of colors
 2. string name //User input of desired name of file to save color palette
 3. string fileName //Converts name into a CSS file
-4. array<string, 10> colorPalette //Array of color options
-5. string color //Output of colors from colorPalette
+4. count //tracks number of colors generated
+5. random color generator
+6. string colorGen writes to file
 
 ### Console Input and Output
 
@@ -114,7 +115,19 @@ while(reader.eof() != true){
 
 ### Functions
 
-*Coming in version 0.2*
+array <int,3> splitColor(string color)
+  splits RGB into Red, Green, and Blue values
+  used in other functions
+string HexToColorName(string & color)
+  converts hex to color names or displays error messages
+string HexToRgb(string & color)
+  converts hex to RGB format
+string dominantColor(string color)
+  displays dominant color: Red, Green, Blue, Blended, Gray Scale
+array <string,2> triadicColor(string color)
+  takes hex color and creates triadic colors, unless the color is blended or greyscale
+string getColor(int location)
+  extract random color from hex names in file, displays color in hex format
 
 ### Classes
 
