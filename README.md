@@ -6,7 +6,7 @@ Provided a number of distinct colors needed (2 or more), create a palette of col
 
 ### v0.3 Updates
 
-Added classes to orangize functions and variables. Added functions and logical system to eliminate red and green colors which are problematic to people who are color blind.
+Added classes to orangize functions and variables. Added functions and logical system to eliminate red and green colors which are problematic to people who are color blind. Similifed code to make reading it easier.
 
 ## Developer
 
