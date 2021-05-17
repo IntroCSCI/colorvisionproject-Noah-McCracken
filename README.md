@@ -168,12 +168,5 @@ int red(string ); blue(string ); green(string );
 public:
 
 // All other functions
-// Defining colors
-void HexToRgb( ); toHSL( );
-  converts color format
-string getHexColor( );
-  returns a random hex value
-array <string, 2> triadicColor(string );
-  returns the corresponding triadic colors
-string dominantColor(string );
-  returns dominant color
+// Editing colors vector
+// Defining Colors
